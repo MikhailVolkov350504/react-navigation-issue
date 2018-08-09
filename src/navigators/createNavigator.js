@@ -5,6 +5,7 @@ import { createStackNavigator } from 'react-navigation';
 const dispatchWrapper = (customDispatch) => {
   return args => {
     console.log('Hooray! I am dispatched');
+    console.log(args);
     customDispatch(args);
   }
 }

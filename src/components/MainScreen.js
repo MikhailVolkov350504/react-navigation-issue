@@ -12,10 +12,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const MainScreen = ({ dispatch }) => (
+const MainScreen = ({ navigation }) => (
   <View style={styles.container}>
     <Button
-        onPress={ () => dispatch(NavigationActions.navigate({ routeName: 'SubScreen' })) }
+        onPress={ () => navigation.dispatch(NavigationActions.navigate({ routeName: 'SubScreen' })) }
         title="Screen 2"
       />
   </View>
