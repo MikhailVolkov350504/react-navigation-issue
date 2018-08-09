@@ -1,8 +1,7 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-
-import LoginStatusMessage from './LoginStatusMessage';
-import AuthButton from './AuthButton';
+import { StyleSheet, View, Button } from 'react-native';
+import { connect } from 'react-redux';
+import { NavigationActions } from 'react-navigation';
 
 const styles = StyleSheet.create({
   container: {
@@ -13,15 +12,18 @@ const styles = StyleSheet.create({
   },
 });
 
-const MainScreen = () => (
+const MainScreen = ({ dispatch }) => (
   <View style={styles.container}>
-    <LoginStatusMessage />
-    <AuthButton />
+    <Button
+        onPress={ () => dispatch(NavigationActions.navigate({ routeName: 'SubScreen' })) }
+        title="Screen 2"
+      />
   </View>
 );
 
 MainScreen.navigationOptions = {
-  title: 'Home Screen',
+  title: 'Screen 1',
 };
 
-export default MainScreen;
+export default connect()(MainScreen);
+

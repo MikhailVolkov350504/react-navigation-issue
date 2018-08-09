@@ -9,9 +9,8 @@ import {
 
 import createNavigator from './createNavigator';
 
-import LoginScreen from '../components/LoginScreen';
 import MainScreen from '../components/MainScreen';
-import ProfileScreen from '../components/ProfileScreen';
+import SubScreen from '../components/SubScreen';
 
 const middleware = createReactNavigationReduxMiddleware(
   'root',
@@ -19,9 +18,8 @@ const middleware = createReactNavigationReduxMiddleware(
 );
 
 const RootNavigator = createNavigator({
-  Login: { screen: LoginScreen },
   Main: { screen: MainScreen },
-  Profile: { screen: ProfileScreen },
+  SubScreen: { screen: SubScreen },
 });
 
 const AppWithNavigationState = reduxifyNavigator(RootNavigator, 'root');

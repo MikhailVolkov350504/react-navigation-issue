@@ -15,16 +15,16 @@ const styles = StyleSheet.create({
   },
 });
 
-const ProfileScreen = () => (
+const SubScreen = () => (
   <View style={styles.container}>
     <Text style={styles.welcome}>
-      Profile Screen
+      Screen 2
     </Text>
   </View>
 );
 
-ProfileScreen.navigationOptions = {
-  title: 'Profile',
+SubScreen.navigationOptions = {
+  title: 'Screen 2',
 };
 
-export default ProfileScreen;
+export default SubScreen;
