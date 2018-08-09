@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "ReduxExample",
-    "description": "Try out react-navigation with this awesome Redux example",
+    "name": "react-navigation-issue",
+    "description": "This repo reproduces issue with custom navigation prop in react-navigation",
     "version": "1.0.0",
-    "slug": "ReduxExample",
+    "slug": "react-navigation-issue",
     "privacy": "public",
     "orientation": "portrait",
     "primaryColor": "#cccccc",

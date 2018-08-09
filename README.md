@@ -1,5 +1,5 @@
-# Redux example
+# Issue reproduction
 
 ## Usage
 
-Please see the [Contributors Guide](https://reactnavigation.org/docs/contributing.html#run-the-example-app) for instructions on running these example apps.
+This repo reproduces issue with custom navigation prop in react-navigation.
